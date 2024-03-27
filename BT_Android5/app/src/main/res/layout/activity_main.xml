@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-3dp"
+        android:padding="20px"
+        android:text=" CALCULATOR"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/text"
+        android:background="#000000"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:text="0"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/material_dynamic_neutral_variant70"
+            android:text="/" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/material_dynamic_neutral_variant70"
+            android:text="*" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/material_dynamic_neutral_variant70"
+            android:text="-" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_margin="10px"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_margin="10px"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_margin="10px"
+            android:backgroundTint="@color/material_dynamic_neutral_variant70"
+            android:text="+" />
+    </GridLayout>
+</RelativeLayout>

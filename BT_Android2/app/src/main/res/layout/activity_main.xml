@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral60"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:text=" CALLING"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textlable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:text="Nhap so dien thoai can goi" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="15px"
+        android:background="@drawable/res_auto"
+        android:hint=" Enter your phone number"
+        android:inputType="phone"
+        android:numeric="integer" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color_secondary"
+        android:layout_margin="30px"
+        android:text="Goi"
+        android:layout_gravity="center"/>
+</LinearLayout>

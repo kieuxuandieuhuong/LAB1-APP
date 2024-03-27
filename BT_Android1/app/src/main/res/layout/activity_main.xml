@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="664dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageAndroid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="450px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:lines="1"
+            android:padding="10px"
+            android:text="New Game" />
+
+        <Button
+            android:id="@+id/continue_game"
+            android:layout_width="450px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:lines="1"
+            android:padding="10px"
+            android:text="Continue Game" />
+
+        <Button
+            android:id="@+id/help_game"
+            android:layout_width="450px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:lines="1"
+            android:padding="10px"
+            android:text="Help Game" />
+
+        <Button
+            android:id="@+id/quick_game"
+            android:layout_width="450px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:lines="1"
+            android:padding="10px"
+            android:text="Quick Game" />
+
+    </LinearLayout>
+
+</LinearLayout>

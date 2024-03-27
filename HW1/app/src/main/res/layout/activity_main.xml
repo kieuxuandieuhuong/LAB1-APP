@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="PROFILE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm UI/UX Designer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gentleman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="About me"
+        android:textColor="@color/blue1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/bellefair"
+        android:text="As a final-year student at Ho Chi Minh City University of Information Technology, I'm deeply passionate about UI/UX design. I thrive under pressure, am proactive in learning, and aim to create exceptional user experiences to contribute to the future of technology"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Detail"
+        android:textColor="@color/blue1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TableRow
+        android:id="@+id/table1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/detail"
+        tools:ignore="DuplicateIds">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="Name:"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/namedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="Kieu Xuan Dieu Huong"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/table1">
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="Location:"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/locationdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="Thu Duc, Ho Chi Minh"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/table2">
+
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="Age:"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/agedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="22 years old"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/experiencetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="EXPERIENCE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Education"
+        android:textColor="@color/blue1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/experiencetitle" />
+
+    <TableRow
+        android:id="@+id/tableedu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/education"
+        app:layout_constraintTop_toBottomOf="@+id/education"
+        tools:ignore="DuplicateIds">
+
+
+        <TextView
+            android:id="@+id/Timeschool"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bellefair"
+            android:text="2020 - Now"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="VNU-HCM University of Information Technology"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/deatailschool"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bellefair"
+        android:text="Information Technology | GPA: 3.6/4.0"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableedu"
+        app:layout_constraintTop_toBottomOf="@+id/tableedu" />
+
+    <TextView
+        android:id="@+id/certification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Certificate"
+        android:textColor="@color/blue1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/education"
+        app:layout_constraintTop_toBottomOf="@+id/deatailschool" />
+    <TableRow
+        android:id="@+id/tablecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/certification"
+        app:layout_constraintTop_toBottomOf="@+id/certification"
+        tools:ignore="DuplicateIds">
+
+
+        <TextView
+            android:id="@+id/Timecer"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="Oct 1,2023 "
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cer"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="Google UX Design Certificate"
+            android:textSize="14sp" />
+    </TableRow>
+
+
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Experience"
+        android:textColor="@color/blue1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/certification"
+        app:layout_constraintTop_toBottomOf="@+id/tablecer" />
+    <TableRow
+        android:id="@+id/tableexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/experience"
+        app:layout_constraintTop_toBottomOf="@+id/experience"
+        tools:ignore="DuplicateIds">
+
+
+        <TextView
+            android:id="@+id/Timexp1"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="3/2023-5/2023"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exp1"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="A BIG BITE APP"
+            android:textSize="14sp" />
+    </TableRow>
+    <TextView
+        android:id="@+id/exprole"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="UI/UX Designer"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/tableexp"
+        app:layout_constraintTop_toBottomOf="@+id/tableexp"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/exp1detail"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="Doing UX Research Task and UI Desginer role"
+        app:layout_constraintEnd_toEndOf="@+id/exprole"
+        app:layout_constraintTop_toBottomOf="@+id/exprole"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" />
+    <TableRow
+        android:id="@+id/tableexp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/experience"
+        app:layout_constraintTop_toBottomOf="@+id/exp1detail"
+        tools:ignore="DuplicateIds">
+
+
+        <TextView
+            android:id="@+id/Timexp2"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="7/2022-10/2022"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exp1"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellefair"
+            android:text="WEBSITE FOR CLOTH SHOP"
+            android:textSize="14sp" />
+    </TableRow>
+    <TextView
+        android:id="@+id/exprole2"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="UI Designer"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/tableexp2"
+        app:layout_constraintTop_toBottomOf="@+id/tableexp2"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/exp2detail"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="Doing UI Desginer role"
+        app:layout_constraintEnd_toEndOf="@+id/exprole2"
+        app:layout_constraintTop_toBottomOf="@+id/exprole2"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
